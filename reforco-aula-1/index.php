@@ -17,6 +17,7 @@ $resultado = $conexao->query("SELECT * FROM pessoas");
     <table>
         <thead>
             <tr>
+                <th>ID</th>
                 <th>Nome</th>
                 <th>Idade</th>
             </tr>
