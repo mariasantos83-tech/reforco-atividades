@@ -23,9 +23,12 @@ $resultado = $conexao->query("SELECT * FROM pessoas");
         </thead>
         <tbody>
             <?php while ($linha= $resultado->fetch_assoc()) { ?>
+            <tr> 
+            <td><?php echo $linha["id"] ?></td>
             <td><?php echo $linha["nome"] ?></td>
               <td><?php echo $linha["idade"] ?></td>
-              <?php}
+              <?php } ?>
+              </tr>
         </tbody>
      </table>
 
