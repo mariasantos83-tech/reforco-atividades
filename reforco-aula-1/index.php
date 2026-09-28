@@ -20,6 +20,7 @@ $resultado = $conexao->query("SELECT * FROM pessoas");
                 <th>ID</th>
                 <th>Nome</th>
                 <th>Idade</th>
+                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -27,7 +28,9 @@ $resultado = $conexao->query("SELECT * FROM pessoas");
             <tr> 
             <td><?php echo $linha["id"] ?></td>
             <td><?php echo $linha["nome"] ?></td>
-              <td><?php echo $linha["idade"] ?></td>
+            <td><?php echo $linha["idade"] ?></td>
+            <td><a href="editar.php">Editar</a></td>
+
               <?php } ?>
               </tr>
         </tbody>
