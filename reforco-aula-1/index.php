@@ -29,7 +29,7 @@ $resultado = $conexao->query("SELECT * FROM pessoas");
             <td><?php echo $linha["id"] ?></td>
             <td><?php echo $linha["nome"] ?></td>
             <td><?php echo $linha["idade"] ?></td>
-            <td><a href="editar.php">Editar</a></td>
+            <td><a href="editar.php?id= <?php echo $linha["id"] >Editar</a> </td>
 
               <?php } ?>
               </tr>
