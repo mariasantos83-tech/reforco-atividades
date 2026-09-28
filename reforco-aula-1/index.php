@@ -4,9 +4,7 @@ $conexao = new mysqli("Localhost", "root", "","teste");
 
 $resultado = $conexao->query("SELECT * FROM pessoas");
 
-
 ?>
-<!DOCTYPE html>
 <html lang="BR">
 <head>
     <meta charset="UTF-8">
