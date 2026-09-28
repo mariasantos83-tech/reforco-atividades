@@ -17,7 +17,6 @@ $resultado = $conexao->query("SELECT * FROM pessoas");
     <table>
         <thead>
             <tr>
-                <th>ID</th>
                 <th>Nome</th>
                 <th>Idade</th>
                 <th>Ações</th>
@@ -26,10 +25,9 @@ $resultado = $conexao->query("SELECT * FROM pessoas");
         <tbody>
             <?php while ($linha= $resultado->fetch_assoc()) { ?>
             <tr> 
-            <td><?php echo $linha["id"] ?></td>
             <td><?php echo $linha["nome"] ?></td>
             <td><?php echo $linha["idade"] ?></td>
-            <td><a href="editar.php?id= <?php echo $linha["id"] >Editar</a> </td>
+            <td><a href="editar.php?id=<?php echo $linha["id"] ?>" >Editar</a></td>
 
               <?php } ?>
               </tr>
